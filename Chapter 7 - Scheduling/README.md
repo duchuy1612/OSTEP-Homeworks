@@ -1,7 +1,7 @@
 Question 1 : Compute the response time and turnaround time when running three jobs of length 200 with the SJF and FIFO schedulers.
 $ ./scheduler.py -p SJF -l 200,200,200 -c
-response time: 0, 200, 400
-turnaround time: 200, 400, 600
+response time: 0, 200, 400.
+turnaround time: 200, 400, 600.
 
 $ ./scheduler.py -p FIFO -l 200,200,200 -c
 response time: 0, 200, 400
