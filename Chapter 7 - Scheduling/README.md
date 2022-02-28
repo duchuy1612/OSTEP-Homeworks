@@ -37,7 +37,7 @@ Question 5 : For what types of workloads and quantum lengths does SJF deliver th
 Question 6 : What happens to response time with SJF as job lengths increase? Can you use the simulator to demonstrate the trend?
 - Thời gian phản hồi sẽ tăng nếu độ dài của các công việc tăng. 
 - Simulator :
->prompt $ ./scheduler.py -p SJF -l 200,200,200 -c
+prompt> $ ./scheduler.py -p SJF -l 200,200,200 -c
 > $ ./scheduler.py -p SJF -l 300,300,300 -c
 > $ ./scheduler.py -p SJF -l 400,400,400 -c
 
