@@ -11,11 +11,11 @@ int main(){
     } 
     else if (pid == 0){
       close(STDOUT_FILENO);
-      printf("child calls printf().\n");
+      printf("Called from child.\n");
     } 
     else{
       wait(NULL);
-      printf("parent calls printf().\n");
+      printf("Called from parent.\n");
     }
     return 0;
 }
