@@ -28,11 +28,11 @@ int main(){
     CPU_ZERO(&cpu_set);
     CPU_SET(0, &cpu_set);
     if(pipe(first_pipe) < 0){
-        printf("pipe error\n");
+        printf("Pipe failed\n");
         exit(1);
     }
     if(pipe(second_pipe) < 0){
-        printf("pipe error\n");
+        printf("Pipe failed\n");
         exit(1);
     }
     int rc;
