@@ -6,25 +6,25 @@ response time: 0, 200, 400.
 turnaround time: 200, 400, 600.
 - Đối với FIFO :
 + $ ./scheduler.py -p FIFO -l 200,200,200 -c
-Cho kết quả là :
-response time: 0, 200, 400
-turnaround time: 200, 400, 600
++ Cho kết quả là :
+response time: 0, 200, 400.
+turnaround time: 200, 400, 600.
 
 Question 2 : Now do the same but with jobs of different lengths: 100, 200, and 300.
 - Đối với SJF :
 + $ ./scheduler.py -p SJF -l 100,200,300 -c
-Cho kết quả là :
++ Cho kết quả là :
 response time: 0, 100, 300
 turnaround time: 100, 300, 600
 - Đối với FIFO :
 + $ ./scheduler.py -p FIFO -l 100,200,300 -c
-Cho kết quả là :
++ Cho kết quả là :
 response time: 0, 100, 300
 turnaround time: 100, 300, 600
 
 Question 3 : Now do the same, but also with the RR scheduler and a time-slice of 1.
 + $ ./scheduler.py -p RR -q 1 -l 100,200,300 -c
-Cho kết quả là : 
++ Cho kết quả là : 
 response time: 0, 1, 2
 turnaround time: 298, 499, 600
 
