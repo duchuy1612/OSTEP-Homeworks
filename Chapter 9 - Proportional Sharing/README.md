@@ -1,12 +1,5 @@
-# Scheduling: Proportional Share
 
-## Homework (Simulation)
-
-This program, `lottery.py`, allows you to see how a lottery scheduler works. See the README for details.
-
-### Questions
-
-1. Compute the solutions for simulations with 3 jobs and random seeds of 1, 2, and 3.
+Question 1 : Compute the solutions for simulations with 3 jobs and random seeds of 1, 2, and 3.
 
     ```
     $ ./lottery.py -s 1 -j 3 -c
@@ -14,19 +7,15 @@ This program, `lottery.py`, allows you to see how a lottery scheduler works. See
     $ ./lottery.py -s 3 -j 3 -c
     ```
 
-2. Now run with two specific jobs: each of length 10, but one (job 0) with just 1 ticket and the other (job 1) with 100 (e.g., `-l 10:1,10:100`). What happens when the number of tickets is so imbalanced? Will job 0 ever run before job 1 completes? How often? In general, what does such a ticket imbalance do to the behavior of lottery scheduling?
+Question 2 : Now run with two specific jobs: each of length 10, but one (job 0) with just 1 ticket and the other (job 1) with 100 (e.g., `-l 10:1,10:100`). What happens when the number of tickets is so imbalanced? Will job 0 ever run before job 1 completes? How often? In general, what does such a ticket imbalance do to the behavior of lottery scheduling?
 
     ```
     $ ./lottery.py -l 10:1,10:100 -c
     ``` 
+    - Công việc 1 sẽ có nhiều cơ hội để chạy hơn. Công việc 1 có xác suất chạy lớn hơn 100 lần so với công việc 0. 
+    - Sự thiếu cân bằng này sẽ khiến cho các công việc có số phiếu nhỏ hơn khó có cơ hội chạy. 
 
-    Job 1 will have more opportunities to run.
-
-    1/100
-
-    Not fair for the lower tickets jobs.
-
-3. When running with two jobs of length 100 and equal ticket allocations of 100 (`-l 100:100,100:100`), how unfair is the scheduler? Run with some different random seeds to determine the (probabilistic) answer; let unfairness be determined by how much earlier one job finishes than the other.
+Question 3 : When running with two jobs of length 100 and equal ticket allocations of 100 (`-l 100:100,100:100`), how unfair is the scheduler? Run with some different random seeds to determine the (probabilistic) answer; let unfairness be determined by how much earlier one job finishes than the other.
 
     ```
     $ ./lottery.py -s 0 -l 100:100,100:100 -c
@@ -42,28 +31,6 @@ This program, `lottery.py`, allows you to see how a lottery scheduler works. See
     U = 196/200 = 0.98
     ```
 
-4. How does your answer to the previous question change as the quantum size (`-q`) gets larger?
-
-    Lesser quantum size is fairer.
-
-    ```
-    $ ./plot_quantum.py
-    ```
-
-    ![Change quantum size](./quantum.png)
-
-5. Can you make a version of the graph that is found in the chapter? What else would be worth exploring? How would the graph look with a stride scheduler?
-
-    ```
-    $ ./plot.py
-    ```
-
-    ![Figure 9.2: Lottery Fairness Study](./9.2.png)
-
-    Check turnaround time.
-
-    ```
-    $ ./plot_stride.py
-    ```
-
-    ![Stride Scheduling](./stride.png)
+Question 4 : How does your answer to the previous question change as the quantum size (`-q`) gets larger?
+Question 5 : Can you make a version of the graph that is found in the chapter? What else would be worth exploring? How would the graph look with a stride scheduler?
+- Em chưa làm được ạ. 
