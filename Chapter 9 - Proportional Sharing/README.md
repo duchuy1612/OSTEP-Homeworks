@@ -31,6 +31,7 @@ Question 3 : When running with two jobs of length 100 and equal ticket allocatio
     U = 196/200 = 0.98
     ```
 
-Question 4 : How does your answer to the previous question change as the quantum size (`-q`) gets larger?
+Question 4 : How does your answer to the previous question change as the quantum size (`-q`) gets larger? 
+và 
 Question 5 : Can you make a version of the graph that is found in the chapter? What else would be worth exploring? How would the graph look with a stride scheduler?
 - Em chưa làm được ạ. 
