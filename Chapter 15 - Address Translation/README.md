@@ -17,6 +17,7 @@ Question 3 : Run with these flags: -s 1 -n 10 -l 100. What is the maximum value 
 
 Question 4 : Run some of the same problems above, but with larger address spaces (-a) and physical memories (-p).
 - N.
+
 Question 5 : What fraction of randomly-generated virtual addresses are valid, as a function of the value of the bounds register? Make a graph from running with different random seeds, with limit values ranging from 0 up to the maximum size of the address space.
 
 
