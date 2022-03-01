@@ -28,7 +28,8 @@ Question 2 : Now let’s do some translations. Start with some small examples, a
     ./paging-linear-translate.py -P 1k -a 16k -p 32k -v -u 75
     ./paging-linear-translate.py -P 1k -a 16k -p 32k -v -u 100
     ```
-    What happens as you increase the percentage of pages that are allocated in each address space?
+    
+What happens as you increase the percentage of pages that are allocated in each address space?
 
 - Khi chúng ta tăng tỷ lệ (%) số trang được cấp phát trong mỗi vùng không gian địa chỉ thì số lượng trang hợp lệ sẽ tăng lên. 
 
