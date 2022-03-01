@@ -16,7 +16,7 @@ Question 3 : Run with these flags: -s 1 -n 10 -l 100. What is the maximum value 
 - Giá trị lớn nhất mà chúng ta có thể đặt cho base đó là : 16 kb * 1024 - 100 = 16284 do flag -l được đặt là 100 và giá trị bộ nhớ vật lý theo default là 16 kb. 
 
 Question 4 : Run some of the same problems above, but with larger address spaces (-a) and physical memories (-p).
-- 
+- N.
 Question 5 : What fraction of randomly-generated virtual addresses are valid, as a function of the value of the bounds register? Make a graph from running with different random seeds, with limit values ranging from 0 up to the maximum size of the address space.
 
 
