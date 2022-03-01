@@ -14,7 +14,7 @@ Question 1 : Before doing any translations, let’s use the simulator to study h
     ./paging-linear-translate.py -P 4k -a 1m -p 512m -v -n 0
     ```
 
-    Before running any of these, try to think about the expected trends. How should page-table size change as the address space grows? As the page size grows? Why shouldn’t we just use really big pages in general?
+Before running any of these, try to think about the expected trends. How should page-table size change as the address space grows? As the page size grows? Why shouldn’t we just use really big pages in general?
 
 - Kích thước của bảng sẽ tăng khi vùng không gian địa chỉ tăng lên và sẽ giảm khi kích thước của trang tăng lên, lý do là bởi ta có công thức : page-table size = address space / page size.
 - Nếu chúng ta chỉ dùng những trang lớn thì sẽ dẫn tới khả năng dư thừa không gian vô cùng lớn, ảnh hưởng tới tỷ lệ sử dụng không gian. 
