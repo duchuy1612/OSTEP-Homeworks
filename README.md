@@ -2,7 +2,7 @@
 
 ## Part I: Virtualization
 
-4. [The Abstraction: The Process](./Chapter 4 - Processes/)
+4. [The Abstraction: The Process](./Chapter 4 - Processes)
 5. [Interlude: Process API](./Chapter 5 - Process APIs/)
 6. [Mechanism: Limited Direct Execution](./Chapter 6 - Limited Direct Execution/)
 7. [Scheduling: Introduction](./Chapter 7 - Scheduling/)
