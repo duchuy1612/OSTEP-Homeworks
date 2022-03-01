@@ -21,7 +21,8 @@ Before running any of these, try to think about the expected trends. How should 
 
 
 Question 2 : Now let’s do some translations. Start with some small examples, and change the number of pages that are allocated to the address space with the `-u` flag. For example:
-    ```bash
+
+    ```
     ./paging-linear-translate.py -P 1k -a 16k -p 32k -v -u 0
     ./paging-linear-translate.py -P 1k -a 16k -p 32k -v -u 25
     ./paging-linear-translate.py -P 1k -a 16k -p 32k -v -u 50
