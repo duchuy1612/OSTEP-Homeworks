@@ -21,7 +21,7 @@ Before running any of these, try to think about the expected trends. How should 
 
 
 Question 2 : Now let’s do some translations. Start with some small examples, and change the number of pages that are allocated to the address space with the `-u` flag. For example:
-    ```
+    ```bash
     ./paging-linear-translate.py -P 1k -a 16k -p 32k -v -u 0
     ./paging-linear-translate.py -P 1k -a 16k -p 32k -v -u 25
     ./paging-linear-translate.py -P 1k -a 16k -p 32k -v -u 50
@@ -40,7 +40,8 @@ Question 3 : Now let’s try some different random seeds, and some different (an
     ./paging-linear-translate.py -P 8k -a 32k  -p 1m   -v -s 2
     ./paging-linear-translate.py -P 1m -a 256m -p 512m -v -s 3
     ```
-    Which of these parameter combinations are unrealistic? Why?
+
+Which of these parameter combinations are unrealistic? Why?
   
 - Tổ hợp đầu tiên không thực sự thực tế bởi vì các thông số vùng không gian địa chỉ là quá nhỏ. 
 - Tương tự thì tổ hợp thứ 3 cũng không thực tế vì các thông số vùng không gian địa chỉ là quá lớn. 
