@@ -11,8 +11,8 @@ Question 4 : Now let’s solve the reader-writer problem, also as described in t
 
 Question 5 : Let’s look at the reader-writer problem again, but this time, worry about starvation. How can you ensure that all readers and writers eventually make progress? See reader-writer-nostarve.c for details.
 
-Question 6 : Let’s look at the reader-writer problem again, but this time, worry about starvation. How can you ensure that all readers and writers eventually make progress? See reader-writer-nostarve.c for details.
+Question 6 : Use semaphores to build a no-starve mutex, in which any thread that tries to acquire the mutex will eventually obtain it. See the code in mutex-nostarve.c for more information.
 
 Question 7 : Liked these problems? See Downey’s free text for more just like them. And don’t forget, have fun! But, you always do when you write code, no?
 
-- No I don't think I do, though. 😅😅
+- I liked some of these problems, especially the "nostarve" ones . But for the last question : no I don't think I do, though. 😅😅
