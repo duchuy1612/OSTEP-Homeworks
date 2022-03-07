@@ -18,3 +18,10 @@ How is the lock acquire written? How about lock release?
 
 - Sau khi đọc xong đoạn code và các hướng dẫn, để kích hoạt một lock, khi chạy ta sẽ sử dụng dòng lệnh : xchg %ax, mutex. 
 - Còn để mở khóa lock đó ra ta có dòng lệnh : mov $0, mutex.
+
+Question 6 : Now run the code, changing the value of the interrupt interval (-i) again, and making sure to loop for a number of times. Does the code always work as expected? Does it sometimes lead to an inefficient use of the CPU? How could you quantify that?
+
+- Đoạn code sẽ không phải lúc nào cũng chạy như dự đoán. Trong nhiều lần chạy sẽ bị sai. 
+- Thỉnh thoảng đoạn code sẽ có dẫn tới việc dùng CPU một cách không hiệu quả lắm do mutex là 0. 
+
+Question 7 : Use the -P flag to generate specific tests of the locking code. For example, run a schedule that grabs the lock in the first thread, but then tries to acquire it in the second. Does the right thing happen? What else should you test?
