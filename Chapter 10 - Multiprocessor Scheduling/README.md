@@ -24,7 +24,7 @@ và process 'c'.
 
 Question 7 : One interesting aspect of caching multiprocessors is the opportunity for better-than-expected speed up of jobs when using multiple CPUs (and their caches) as compared to running jobs on a single processor. Specifically, when you run on N CPUs, sometimes you can speed up by more than a facor of N, a situation entitled super-linear speedup. To experiment with this, use the job description here (-L a:100:100,b:100:100,c:100:100) with a small cache (-M 50) to create three jobs. Run this on systems with 1, 2, and 3 CPUs (-n 1, -n 2, -n 3). Now, do the same, but with a larger per-CPU cache of size 100. What do you notice about performance as the number of CPUs scales? Use -c to confirm your guesses, and other tracing flags to dive even deeper.
 
-```shell
+```
 $ ./multi.py -n 1 -L a:100:100,b:100:100,c:100:100 -T -C -M 50 -c     300
 $ ./multi.py -n 2 -L a:100:100,b:100:100,c:100:100 -T -C -M 50 -c     150
 $ ./multi.py -n 3 -L a:100:100,b:100:100,c:100:100 -T -C -M 50 -c     100
